@@ -281,4 +281,7 @@ nav .container div {
         width: auto;
         padding-bottom: 25px;
     }
+    .details div{
+        margin: 0 !important;
+    }
 }
