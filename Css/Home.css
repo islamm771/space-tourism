@@ -51,7 +51,7 @@ nav ul li{
     cursor: pointer;
 }
 nav ul li a{
-    color: #ddd;
+    color: #949494;
     display: inline-block;
     text-transform: uppercase;
     position: relative;
@@ -137,6 +137,9 @@ nav .container div{
         padding-right: 15px;
     }
     nav ul{
+        background-color:#404040
+        background-color: rgb(5 8 25);
+        box-shadow: 0px 3px 9px -2px #ffffff1a;
         width: 350px;
         height: 0;
         flex-wrap: wrap;
