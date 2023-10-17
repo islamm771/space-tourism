@@ -13,6 +13,8 @@ ul{
 body{
     background-image: url(../images/destination/background-destination-desktop.jpg);
     background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
     height:100vh;
 }
 nav {
