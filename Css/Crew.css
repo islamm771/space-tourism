@@ -232,7 +232,7 @@ nav .container div {
         padding: 1.25rem 12px;
         position: relative;
         overflow: visible;
-        min-height:665px
+        min-height:670px
     }
     .crew >p{
         margin-left: 0;
@@ -270,7 +270,7 @@ nav .container div {
     }
     .crew .change{
         position: absolute;
-        bottom: 20px;
+        bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
         margin-left: 0;
