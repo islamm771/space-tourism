@@ -186,7 +186,7 @@ nav .container div{
     .Home div h1{
         font-size: 90px;
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .Home div:first-child,.Home div:last-child {
         text-align: center;
