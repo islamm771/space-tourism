@@ -88,6 +88,7 @@ nav .container div{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    min-height:580px
 }
 .Home div:first-child{
     width: 35%;
@@ -183,6 +184,9 @@ nav .container div{
     nav .container div button{
     border: 0;
     background-color: transparent;
+    }
+    .Home{
+        margin-top:3rem
     }
     .Home div h1{
         font-size: 90px;
