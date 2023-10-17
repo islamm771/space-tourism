@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url(../images/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    height:100vh;
+}
+nav {
+    padding: 30px 0;
+    padding-left: 50px;
+    position: relative;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(255 255 255 / 15%);
+    margin-left: auto;
+    padding: 0 100px 0 70px;
+    position: relative;
+}
+
+nav ul::before {
+    content: "";
+    background-color: rgba(151, 151, 151, 1);
+    position: absolute;
+    width: 155%;
+    height: 1px;
+    left: -150%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li {
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #ddd;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    padding: 25px 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: white;
+}
+
+nav ul li a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s;
+    transform: rotateY(90deg);
+}
+
+nav ul li a.active::before {
+    transform: rotateY(0deg);
+}
+
+nav ul li a:hover::before {
+    transform: rotateY(0deg);
+}
+
+nav .container div {
+    display: none;
+    margin: 0;
+}
+/* Staring Distination */
+.Distination{
+    padding: 2rem 50px;
+    height: 100vh;
+}
+.Distination section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Distination p{
+    color: white;
+}
+.Distination > p{
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+.Distination > p span{
+    color: #ffffff59;
+}
+.Distination ul{
+    display: flex;
+    gap: 30px;
+}
+.Distination ul li{
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.Distination ul li.active , 
+.Distination ul li:hover {
+    color: white;
+}
+.Distination ul li span{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: -8px;
+    transition: 0.5s;
+    transform: rotateY(90deg);
+}
+.Distination ul li:not(.active):hover span{
+    transform: rotateY(0deg);
+    background-color: #979797;
+}
+.Distination ul li.active span{
+    transform: rotateY(0deg);
+}
+
+.Distination ul li , .Distination .disc{
+    color: rgba(208, 214, 249, 1);
+}
+.Distination div h1{
+    color: white;
+    font-size: 70px;
+    font-family: 'Bellefair', serif;
+    margin: 20px 0 5px;
+}
+.Distination .disc{
+    line-height: 1.5;
+    position: relative;
+    padding-bottom: 45px;
+    width: 400px;
+}
+.Distination .disc::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    background-color: #979797;
+    bottom: 0;
+    left: 0;
+}
+.Distination section .details{
+    display: flex;
+    gap: 3rem;
+    padding-top: 2rem;
+}
+.details>div p:first-child{
+    font-size: 14px;
+    color: #d0d6f9;
+}
+.details>div p:last-child{
+    font-size: 28px;
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+}
+/* Staring Distination */
+
+
+@media (min-width:320px) and (max-width:480px) {
+    nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav ul {
+        width: 350px;
+        height: 0;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0;
+        padding: 0;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    nav .ul-open {
+        height: 300px;
+        padding: 20px 5px;
+    }
+
+    nav ul::before {
+        content: "";
+        background-color: rgba(151, 151, 151, 1);
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0%;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 5px 7px;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li a::before {
+        width: calc(100%-20px);
+        left: 0;
+    }
+
+    nav .container div {
+        display: block;
+        margin-left: auto;
+
+    }
+
+    nav .container div button {
+        border: 0;
+        background-color: transparent;
+    }
+    .Distination {
+        padding: 1.25rem 15px;
+    }
+    .Distination > p{
+        margin: 0;
+        text-align: center;
+        margin-bottom: 3rem;
+        font-size: 16px;
+    }
+    .Distination section div:first-child{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.25rem;
+    }
+    .Distination section div:first-child img{
+        width: 55%;
+    }
+    .Distination section div:last-child{
+        width: 100%;
+        text-align: center;
+    }
+    .Distination ul{
+        justify-content: center;
+    }
+    .Distination div h1{
+        font-size: 70px;
+        margin: 15px 0 12px;
+    }
+    .Distination .disc{
+        width: auto;
+        padding-bottom: 25px;
+    }
+}

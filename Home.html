@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+    <link rel="stylesheet" href="./Css/Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700&family=Bellefair&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="./Home.html"> <img src="./images/logo.svg" alt=""> </a>
+            <ul>
+                <li>
+                    <a class="active" href="./Home.html">00 Home</a>
+                </li>
+                <li>
+                    <a href="./Distination.html">01 Distination</a>
+                </li>
+                <li>
+                    <a href="./Crew.html">02 Crew</a>
+                </li>
+                <li>
+                    <a href="./Technology.html">03 Technology</a>
+                </li>
+            </ul>
+            <div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                        <g fill="#D0D6F9" fill-rule="evenodd">
+                            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+        <section class="Home">
+            <div>
+                <p>SO, YOU WANT TO TRAVEL TO</p>
+                <h1>SPACE</h1>
+                <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not
+                    hover
+                    kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this
+                    world
+                    experience!
+                </p>
+            </div>
+            <div>
+                <p>
+                    Explore
+                </p>
+            </div>
+        </section>
+    <script src="./Js/main.js"></script>
+    <script src="./Js/navbar.js"></script>
+    <script>
+        console.log(document.querySelector('.Home'))
+        document.querySelector('.Home').style.height = `${document.querySelector('.Home').clientHeight - document.querySelector('nav').clientHeight}px`
+    </script>
+</body>
+
+</html>

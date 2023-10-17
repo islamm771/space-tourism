@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism - Crew</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+    <link rel="stylesheet" href="./Css/Crew.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="./Home.html"> <img src="./images/logo.svg" alt=""> </a>
+            <ul>
+                <li>
+                    <a href="./Home.html">00 Home</a>
+                </li>
+                <li>
+                    <a href="./Distination.html">01 Distination</a>
+                </li>
+                <li>
+                    <a class="active" href="./Crew.html">02 Crew</a>
+                </li>
+                <li>
+                    <a href="./Technology.html">03 Technology</a>
+                </li>
+            </ul>
+            <div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                        <g fill="#D0D6F9" fill-rule="evenodd">
+                            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="crew">
+    <p><span>02</span> Meet your crew</p>
+        <section>
+            <div class="crew-person">
+                    <p style="color: #ffffff59;font-size: 22px;text-transform: uppercase;">Commander</p>
+                    <p style="color: white;font-size: 40px;text-transform: uppercase;margin: 10px 0;">
+                        Douglas Hurley
+                    </p>
+                    <p>
+                        Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                        and former NASA astronaut. He launched into space for the third time as
+                        commander of Crew Dragon Demo-2.
+                    </p>
+            </div>
+            <div>
+                <img class="crew-img" src="./images//crew/image-douglas-hurley.png"
+                    alt="">
+            </div>
+            
+        </section>
+        <div class="change">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <script src="./Js/Crew.js"></script>
+    <script src="./Js/navbar.js"></script>
+    <script>
+        console.log(document.querySelector('.crew'))
+        document.querySelector('.crew').style.height = `${document.querySelector('.crew').clientHeight - document.querySelector('nav').clientHeight}px`
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image: url(../images/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height:100vh;
+}
+nav {
+    padding: 30px 0;
+    padding-left: 50px;
+    position: relative;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(255 255 255 / 15%);
+    margin-left: auto;
+    padding: 0 100px 0 70px;
+    position: relative;
+}
+
+nav ul::before {
+    content: "";
+    background-color: rgba(151, 151, 151, 1);
+    position: absolute;
+    width: 155%;
+    height: 1px;
+    left: -150%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li {
+    color: white;
+    align-self: center;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: #ddd;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    padding: 25px 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: white;
+}
+
+nav ul li a::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s;
+    transform: rotateY(90deg);
+}
+
+nav ul li a.active::before {
+    transform: rotateY(0deg);
+}
+
+nav ul li a:hover::before {
+    transform: rotateY(0deg);
+}
+
+nav .container div {
+    display: none;
+    margin: 0;
+}
+/* Starting Crew */
+.crew{
+    padding: 2rem 50px;
+    height: 100vh;
+    padding-bottom: 0;
+    overflow: hidden;
+    position: relative;
+}
+.crew p {
+    color: white;
+}
+.crew section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.crew>p {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 5px;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.crew>p span {
+    color: #ffffff59;
+}
+.crew .change span.active{
+    background-color: white;
+    opacity: 1;
+}
+.crew .change span:hover{
+    opacity: 1;
+}
+.crew section div:first-child{
+    width: 35%;
+    margin-bottom: 7rem;
+}
+.crew section div:first-child p:first-child , .crew section div:first-child p:nth-child(2){
+    font-family: 'Bellefair', serif;
+}
+.crew section div:first-child p:last-child{
+    color: rgba(208, 214, 249, 1);
+    line-height: 1.5;
+    width: 400px;
+}
+.crew section >div:last-child{
+    width: 50%;
+    text-align: right;
+}
+.crew section div img{
+    height: 490px;
+}
+.crew .change {
+    margin-left: 70px;
+    position: absolute;
+    bottom: 70px;
+}
+
+.crew .change span {
+    background-color: #979797;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+/* Ending Crew */
+
+
+@media (min-width:320px) and (max-width:480px) {
+    nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav ul {
+        width: 350px;
+        height: 0;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        gap: 0;
+        padding: 0;
+        transition: 0.5s;
+        overflow: hidden;
+        z-index: 999;
+    }
+
+    nav .ul-open {
+        height: 300px;
+        padding: 20px 5px;
+    }
+
+    nav ul::before {
+        content: "";
+        background-color: rgba(151, 151, 151, 1);
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0%;
+        transform: translateY(0);
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 5px 7px;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    nav ul li a::before {
+        width: calc(100%-20px);
+        left: 0;
+    }
+
+    nav .container div {
+        display: block;
+        margin-left: auto;
+
+    }
+
+    nav .container div button {
+        border: 0;
+        background-color: transparent;
+    }
+    .crew{
+        padding: 1.25rem 12px;
+        position: relative;
+        overflow: visible;
+    }
+    .crew >p{
+        margin-left: 0;
+        text-align: center;
+    }
+    .crew section{
+        flex-direction: column-reverse;
+    }
+    .crew section div:first-child{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .crew section div:first-child p:nth-of-type(1){
+        font-size: 24px !important;
+    }
+    .crew section div:first-child p:nth-of-type(2){
+        font-size: 30px !important;
+        margin-bottom: 15px !important;
+    }
+    .crew section div:first-child p:last-child{
+        width: auto;
+    }
+    .crew section div:last-child{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid #eee;
+    }
+    .crew section div img {
+        height: 280px;
+        margin-left: 2rem;
+        margin-bottom: -3px;
+    }
+    .crew .change{
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Tourism - Distination</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/logo.svg">
+    <link rel="stylesheet" href="./Css/Distination.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;500;700&family=Bellefair&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="./Home.html"> <img src="./images/logo.svg" alt=""> </a>
+            <ul>
+                <li>
+                    <a href="./Home.html">00 Home</a>
+                </li>
+                <li>
+                    <a class="active" href="./Distination.html">01 Distination</a>
+                </li>
+                <li>
+                    <a href="./Crew.html">02 Crew</a>
+                </li>
+                <li>
+                    <a href="./Technology.html">03 Technology</a>
+                </li>
+            </ul>
+            <div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+                        <g fill="#D0D6F9" fill-rule="evenodd">
+                            <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+                        </g>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <section class="Distination">
+        <p><span>01</span> Pick your destination</p>
+        <section>
+            <div>
+                <img id="image" src="./images/destination/image-moon.png" alt="">
+            </div>
+            <div>
+                <ul class="Dist-links" tabindex="0">
+                    <li class="active" tabindex="1"><span></span>MOON</li>
+                    <li tabindex="2"><span></span>MARS</li>
+                    <li tabindex="3"><span></span>EUROPA</li>
+                    <li tabindex="4"><span></span>TITAN</li>
+                </ul>
+                <h1 id="title">MOON</h1>
+                <p class="disc">See our planet as you’ve never seen it before. A perfect
+                    relaxing trip
+                    away
+                    to help regain
+                    perspective and come back refreshed. While you’re there, take in some history by visiting
+                    the
+                    Luna 2 and Apollo 11 landing sites.
+                </p>
+                <div class="details">
+                    <div>
+                        <p>AVG. DISTANCE</p>
+                        <p class="dist-details">384,400 km</p>
+                    </div>
+                    <div>
+                        <p>Est. travel time</p>
+                        <p class="travel-details">3 days</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+    <script src="./Js/Distination.js"></script>
+    <script src="./Js/navbar.js"></script>
+    <script>
+        document.querySelector('.Distination').style.height = `${document.querySelector('.Distination').clientHeight - document.querySelector('nav').clientHeight}px`
+    </script>
+</body>
+
+</html>
